@@ -1,26 +1,18 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
-import {HomePageContent} from './components/HomePageContent'
+import {PortfolioPage} from './components/PortfolioPage';
 
-function App() {
+const App: React.FunctionComponent = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
             Aaron Fung's Portfolio
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <PortfolioPage/>
       </header>
     </div>
   );
-}
+};
 
 export default App;
