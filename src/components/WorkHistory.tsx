@@ -1,12 +1,11 @@
 import * as React from 'react';
-import {FunctionComponent} from 'react';
 import {WorkHistoryItem} from './WorkHistoryItem';
 
 export interface WorkHistoryProps {
     workHistroy: string[];
 }
 
-const WorkHistory: FunctionComponent<WorkHistoryProps> = (props: WorkHistoryProps) => {
+const WorkHistoryContent: React.FunctionComponent<WorkHistoryProps> = (props: WorkHistoryProps) => {
 
     return (
         <div className='workHistroy'>
@@ -19,4 +18,4 @@ const WorkHistory: FunctionComponent<WorkHistoryProps> = (props: WorkHistoryProp
     );
 };
 
-export const WorkHistory;
+export const WorkHistory = WorkHistoryContent;
