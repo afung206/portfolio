@@ -2,13 +2,13 @@ import * as React from 'react';
 import {WorkHistoryItem} from './WorkHistoryItem';
 
 export interface WorkHistoryProps {
-    workHistroy: string[];
+    workHistory: string[];
 }
 
 const WorkHistoryContent: React.FunctionComponent<WorkHistoryProps> = (props: WorkHistoryProps) => {
 
     return (
-        <div className='workHistroy'>
+        <div className='workHistory'>
             <ol>
                 <li>
                     <WorkHistoryItem workTitle={'Software Developer'} workDescription={'Awesome developer!'}/>

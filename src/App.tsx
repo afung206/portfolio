@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import {PortfolioPage} from './components/PortfolioPage';
+import { PortfolioPage } from './components/Portfolio/PortfolioPage';
 
 const App: React.FunctionComponent = () => {
   return (

@@ -1,14 +1,14 @@
 import * as React from 'react';
-import {HomePage} from './Home/HomePage';
-import {PortfolioSection} from './PortfolioSection'
-import {Navbar} from 'react-bootstrap';
+import { HomePage } from '../Home/HomePage';
+import { Navbar } from 'react-bootstrap';
+import { ProjectSection } from '../Projects/ProjectSection';
 
 const PortfolioPageContent: React.FunctionComponent = () => {
 
     return (
         <>
             <div className='HomePage'>
-                <HomePage welcomeMessage='Welcome!'/>
+                <HomePage welcomeMessage='Welcome!' />
             </div>
             <Navbar bg="light">
                 <Navbar.Brand href="#home">Home</Navbar.Brand>
@@ -16,9 +16,7 @@ const PortfolioPageContent: React.FunctionComponent = () => {
                 <Navbar.Brand href="#WorkHistory">Work History</Navbar.Brand>
                 <Navbar.Brand href="#Projects">Projects</Navbar.Brand>
             </Navbar>
-            <PortfolioSection portfolioName="Biography"></PortfolioSection>
-            <PortfolioSection portfolioName="Work History"></PortfolioSection>
-            <PortfolioSection portfolioName="Projects"></PortfolioSection>
+            <ProjectSection/>
         </>
     );
 };
