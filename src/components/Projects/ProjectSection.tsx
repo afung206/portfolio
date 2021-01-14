@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Image } from 'react-bootstrap';
-import GitHubLogo from '../../resources/github.svg'
+// import { ReactComponent as GitHubLogo } from '../../resources/github.svg'
 
 const ProjectSectionContent: React.FunctionComponent = () => {
 
@@ -11,8 +10,8 @@ const ProjectSectionContent: React.FunctionComponent = () => {
             </div>
             <ul>
                 <li>
-                    <a href='https://github.com/afung206' target="_blank">
-                        <Image src={GitHubLogo} clasName='githubIcon' />
+                    <a href='https://github.com/afung206' target="_blank" rel="noreferrer">
+                        {/* <GitHubLogo/> */}
                     </a>
                 </li>
             </ul>

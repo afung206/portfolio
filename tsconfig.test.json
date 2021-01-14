@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions" : {
+        "outDir": "build/test",
+        "jsx": "react",
+        "module": "commonjs",
+        "noUnusedLocals": false,
+        "isolatedModules": false,
+        "noEmit":  false,
+        "noStrictGenericChecks": true,
+    },
+    "exclude": ["node_modules", "build"]
+}

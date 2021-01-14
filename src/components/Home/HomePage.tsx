@@ -30,12 +30,12 @@ const HomePageContent: React.FunctionComponent<HomePageContentProps> = (props: H
     }, []);
 
     const renderQouteOfTheDay = () => {
-        if (randomQoute === undefined || randomQoute === '') {
+        if (randomQoute === undefined || randomQoute.text === '') {
             return;
         } else {
             return (
                 <div className="qoute">
-                    <b>"{randomQoute.text}"</b>
+                    <b>{randomQoute.text}</b>
                     <b>-{randomQoute.author}</b>
                 </div>
             );

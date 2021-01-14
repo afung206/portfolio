@@ -7,7 +7,7 @@ const App: React.FunctionComponent = () => {
     <div className="App">
       <header className="App-header">
         <p>
-            Aaron Fung's Portfolio
+            Aaron Fungs Portfolio
         </p>
         <PortfolioPage/>
       </header>
