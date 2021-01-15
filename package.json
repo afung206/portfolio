@@ -10,7 +10,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint --fix ./src/*/*.tsx --color",
-    "test": "env TS_NODE_PROJECT='tsconfig.test.json' mocha --require ts-node/register --verbose --reporter nyan --config './test/.mocharc.js' --recursive './test/**/*/*.test.tsx' --exit",
+    "test": "env TS_NODE_PROJECT='tsconfig.test.json' mocha --require ts-node/register --verbose --config './test/.mocharc.js' --recursive './test/**/*/*.test.tsx' --exit",
     "tint": "npm-run-all lint test"
   },
   "browserslist": {

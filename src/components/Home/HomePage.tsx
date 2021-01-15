@@ -30,7 +30,7 @@ const HomePageContent: React.FunctionComponent<HomePageContentProps> = (props: H
     }, []);
 
     const renderQouteOfTheDay = () => {
-        if (randomQoute === undefined || randomQoute.text === '') {
+        if (randomQoute.text === undefined || randomQoute.text === '') {
             return;
         } else {
             return (
@@ -45,9 +45,7 @@ const HomePageContent: React.FunctionComponent<HomePageContentProps> = (props: H
     return (
         <div className='homepage'>
             <b>{props.welcomeMessage}</b>
-                <div className="qoute">
-                    <b>{renderQouteOfTheDay()}</b>
-                </div>
+            {renderQouteOfTheDay()}
         </div>
     );
 };
