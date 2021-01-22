@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { FunctionComponent } from 'react';
 import { HomePage } from '../Home/HomePage';
 import { Navbar } from 'react-bootstrap';
 import { ProjectSection } from '../Projects/ProjectSection';
 
-const PortfolioPageContent: React.FunctionComponent = () => {
+export const PortfolioPage: FunctionComponent = () => {
 
     return (
         <>
@@ -20,5 +21,3 @@ const PortfolioPageContent: React.FunctionComponent = () => {
         </>
     );
 };
-
-export const PortfolioPage = PortfolioPageContent;

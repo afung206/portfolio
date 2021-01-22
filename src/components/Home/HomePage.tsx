@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FunctionComponent } from 'react'
 import {useEffect, useState} from 'react';
 import Axios, {AxiosInstance} from 'axios';
 
@@ -11,7 +12,7 @@ export interface QouteItem {
     author: string,
 }
 
-const HomePageContent: React.FunctionComponent<HomePageContentProps> = (props: HomePageContentProps) => {
+export const HomePage: FunctionComponent<HomePageContentProps> = (props: HomePageContentProps) => {
 
     const qouteUrl = 'https://type.fit/api/quotes'
     const [randomQoute, setRandomQoute] = useState({text: '', author: ''});
@@ -49,5 +50,3 @@ const HomePageContent: React.FunctionComponent<HomePageContentProps> = (props: H
         </div>
     );
 };
-
-export const HomePage = HomePageContent;

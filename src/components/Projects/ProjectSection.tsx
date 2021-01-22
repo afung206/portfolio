@@ -1,8 +1,7 @@
 import * as React from 'react';
-// import { ReactComponent as GitHubLogo } from '../../resources/github.svg'
+import { FunctionComponent } from 'react';
 
-const ProjectSectionContent: React.FunctionComponent = () => {
-
+export const ProjectSection: FunctionComponent = () => {
     return (
         <>
             <div className='Projects'>
@@ -10,13 +9,16 @@ const ProjectSectionContent: React.FunctionComponent = () => {
             </div>
             <ul>
                 <li>
-                    <a href='https://github.com/afung206' target="_blank" rel="noreferrer">
-                        {/* <GitHubLogo/> */}
+                    <a className='github' href='https://github.com/afung206' target="_blank" rel="noreferrer">
+                        <img
+                            title='GitHub'
+                            className='gitHubIcon'
+                            alt='GitHub'
+                            src='../../assets/images/GitHub-Logos/GitHub_Logo_White.png'
+                        />
                     </a>
                 </li>
             </ul>
         </>
     );
 };
-
-export const ProjectSection = ProjectSectionContent;

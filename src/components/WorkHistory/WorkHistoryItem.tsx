@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FunctionComponent } from 'react';
 
 export interface WorkHistoryItemProps {
     workTitle: string;
@@ -6,7 +7,7 @@ export interface WorkHistoryItemProps {
     workItems?: string[];
 }
 
-const WorkHistoryItemContent: React.FunctionComponent<WorkHistoryItemProps> = (props: WorkHistoryItemProps) => {
+export const WorkHistoryItem: FunctionComponent<WorkHistoryItemProps> = (props: WorkHistoryItemProps) => {
 
     return (
         <div className='workHistoryItem'>
@@ -16,5 +17,3 @@ const WorkHistoryItemContent: React.FunctionComponent<WorkHistoryItemProps> = (p
         </div>
     );
 };
-
-export const WorkHistoryItem = WorkHistoryItemContent;

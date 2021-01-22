@@ -26,7 +26,6 @@
     ]
   },
   "dependencies": {
-    "web-vitals": "^0.2.4"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
@@ -37,6 +36,7 @@
     "@types/chai-enzyme": "^0.6.8",
     "@types/enzyme": "^3.10.8",
     "@types/mocha": "^8.2.0",
+    "@types/node": "^12.12.47",
     "@types/react": "^17.0.0",
     "@types/sinon-chai": "^3.2.5",
     "@typescript-eslint/eslint-plugin": "^4.13.0",

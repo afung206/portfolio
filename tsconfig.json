@@ -21,8 +21,14 @@
     "noImplicitAny": false,
     "jsx": "react-jsx"
   },
+  "types": [
+    "jest",
+    "node"
+  ],
   "include": [
-    "./src/**/*.ts"
+    "./src/assets/images/**/*.png",
+    "./src/**/*.tsx",
+    "./test/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
