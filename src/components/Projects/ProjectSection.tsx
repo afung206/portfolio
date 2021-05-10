@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { FunctionComponent } from 'react';
+import './ProjectSection.scss';
 
 export const ProjectSection: FunctionComponent = () => {
     return (
         <>
-            <div className='Projects'>
+            <div className="Projects-Header" id="Projects">
                 <b>Projects</b>
             </div>
             <ul>

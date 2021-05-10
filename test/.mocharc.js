@@ -1,9 +1,10 @@
 module.exports = {
+  "color": true,
   "diff": true,
   "extension": ["tsx"],
   "package": "./package.json",
   "reporter": "spec",
-  "require": "./test/testUtils/setupTests.js",
+  "require": ["./test/testUtils/setupTests.js", "./test/testUtils/ignore-assets.js"],
   "slow": 75,
   "timeout": 2000,
   "ui": "bdd",

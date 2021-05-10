@@ -1,0 +1,29 @@
+.navBar {
+    width: 100%;
+    color: white;
+    background-color: #111;
+    padding: 10px;
+
+    .navBar-navItem {
+        font-size: 24px;
+        height: 120px;
+        display: inline;
+        padding: 15px;
+    }
+}
+
+/* Media screen size */
+@media screen and (min-width: 768px) {
+    button {
+        display: none;
+    }
+
+    .links {
+        height: auto;
+        display: flex;
+    }
+
+    li {
+        padding: 0 15px;
+    }
+}

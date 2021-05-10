@@ -1,16 +1,17 @@
 import * as React from 'react';
-import './App.css';
+import { FunctionComponent } from 'react';
+import './App.scss';
 import { PortfolioPage } from './components/Portfolio/PortfolioPage';
 
-const App: React.FunctionComponent = () => {
+const App: FunctionComponent = () => {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-            Aaron Fungs Portfolio
+            {'Aaron Fung\'s Portfolio'}
         </p>
-        <PortfolioPage/>
       </header>
+      <PortfolioPage/>
     </div>
   );
 };

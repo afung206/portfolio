@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { FunctionComponent } from 'react'
-import {useEffect, useState} from 'react';
+import { FunctionComponent, useEffect, useState } from 'react'
 import Axios, {AxiosInstance} from 'axios';
+import './HomePage.scss';
 
 export interface HomePageContentProps {
     welcomeMessage: string;
@@ -16,6 +16,7 @@ export const HomePage: FunctionComponent<HomePageContentProps> = (props: HomePag
 
     const qouteUrl = 'https://type.fit/api/quotes'
     const [randomQoute, setRandomQoute] = useState({text: '', author: ''});
+
     let axios: AxiosInstance;
 
     useEffect(() => {
@@ -35,17 +36,23 @@ export const HomePage: FunctionComponent<HomePageContentProps> = (props: HomePag
             return;
         } else {
             return (
-                <div className="qoute">
-                    <b>{randomQoute.text}</b>
-                    <b>-{randomQoute.author}</b>
-                </div>
+                <>
+                    <div className="Qoute-Text">
+                        <b>{randomQoute.text}</b>
+                    </div>
+                    <div className="Qoute-Author">
+                        - {randomQoute.author}
+                    </div>
+                </>
             );
         }
     };
 
     return (
-        <div className='homepage'>
-            <b>{props.welcomeMessage}</b>
+        <div className='HomePage'>
+            <div className='Welcome-Message'>
+                {props.welcomeMessage}
+            </div>
             {renderQouteOfTheDay()}
         </div>
     );
