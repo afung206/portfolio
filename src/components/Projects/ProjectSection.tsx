@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import './ProjectSection.scss';
 
 export const ProjectSection: FunctionComponent = () => {
@@ -15,7 +14,7 @@ export const ProjectSection: FunctionComponent = () => {
                             title='GitHub'
                             className='gitHubIcon'
                             alt='GitHub'
-                            src='../../assets/images/GitHub-Logos/GitHub_Logo_White.png'
+                            src={('../../assets/images/GitHub-Logos/GitHub_Logo_White.png')}
                         />
                     </a>
                 </li>

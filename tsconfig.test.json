@@ -8,6 +8,10 @@
         "isolatedModules": false,
         "noEmit":  false,
         "noStrictGenericChecks": true,
+        "allowJs": true,
     },
-    "exclude": ["node_modules", "build"]
+    "exclude": [
+        "node_modules", 
+        "build"
+    ]
 }

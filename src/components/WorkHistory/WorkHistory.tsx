@@ -38,6 +38,10 @@ const WorkHistoryInfo: FunctionComponent<WorkHistoryItem> = (props: Props) => {
                 </div>
             )
         }
+        return (
+            <>
+            </>
+        )
     };
 
     return (

@@ -4,7 +4,7 @@ module.exports = {
   "extension": ["tsx"],
   "package": "./package.json",
   "reporter": "spec",
-  "require": ["./test/testUtils/setupTests.js", "./test/testUtils/ignore-assets.js"],
+  "require": ["chai", "choma", "ignore-styles", "./test/testUtils/setupTests.js"],
   "slow": 75,
   "timeout": 2000,
   "ui": "bdd",

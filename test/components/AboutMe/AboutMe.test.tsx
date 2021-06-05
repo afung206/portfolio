@@ -12,8 +12,10 @@ describe('AboutMe', () => {
 
     it('should contain some information about myself', () => {
         const subject = shallow(<AboutMe/>);
-        const aboutMeContent = subject.find('.aboutMeContent');
+        const aboutMeContent = subject.find('.AboutMe-Message');
 
+        expect(aboutMeContent).to.exist;
         expect(aboutMeContent.length).to.be.greaterThan(0);
+        expect(aboutMeContent.text()).to.contain('Aaron Fung');
     });
 });

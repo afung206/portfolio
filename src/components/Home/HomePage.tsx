@@ -14,7 +14,7 @@ export interface QouteItem {
 
 export const HomePage: FunctionComponent<HomePageContentProps> = (props: HomePageContentProps) => {
 
-    const qouteUrl = 'https://type.fit/api/quotes'
+    const qouteUrl: string = 'https://type.fit/api/quotes'
     const [randomQoute, setRandomQoute] = useState({text: '', author: ''});
 
     let axios: AxiosInstance;
@@ -22,8 +22,9 @@ export const HomePage: FunctionComponent<HomePageContentProps> = (props: HomePag
     useEffect(() => {
         axios = Axios.create();
         axios.get(qouteUrl).then((payload) => {
-            const qouteList = payload.data;
-            const qoute: QouteItem = qouteList[Math.floor(Math.random() * 99)];
+            const randomNumber: number = Math.floor(Math.random() * 99);
+            const qouteList: QouteItem[] = payload.data as QouteItem[];
+            const qoute: QouteItem = qouteList[randomNumber];
             setRandomQoute({
                 text: qoute.text,
                 author: qoute.author,

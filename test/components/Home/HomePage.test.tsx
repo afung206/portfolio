@@ -21,7 +21,7 @@ describe('HomePage', () => {
             welcomeMessage: 'Test!'
         };
         const subject = shallow(<HomePage {...welcomeMessageProp} />);
-        const actualWelcomeMessage = subject.find('.homepage').text();
+        const actualWelcomeMessage = subject.find('.Welcome-Message').text();
 
         expect(actualWelcomeMessage).to.equal(welcomeMessageProp.welcomeMessage);
     });

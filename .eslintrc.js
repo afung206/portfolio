@@ -1,31 +1,26 @@
 module.exports = {
-    "settings": {
-        "react": {
-          "version": "detect",
+    root: true,
+    extends: ['react-app'],
+    plugins: ['chai-friendly'],
+    rules: {
+        'no-var': 'error',
+        '@typescript-eslint/no-unused-expression': 'off',
+        'chai-friendly/no-unused-expressions': 'error',
+    },
+    overrides: [
+        {
+            files: ['**/*.ts?(x)'],
+            plugins: ['chai-friendly'],
+            extends: ['react-app', 'plugin:@typescript-eslint/recommended-requiring-type-checking'],
+            parser: '@typescript-eslint/parser',
+            parserOptions: {
+                project: './tsconfig.json',
+            },
+            rules: {
+                '@typescript-eslint/no-unused-expressions': 'off',
+                'chai-friendly/no-unused-expressions': 'error',
+                '@typescript-eslint/unbound-method': 'off',
+            },
         },
-    },
-    "root": true,
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
-    "rules": {
-    }
-}
+};
