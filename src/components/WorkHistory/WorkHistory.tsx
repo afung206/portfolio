@@ -52,7 +52,7 @@ const WorkHistoryInfo: FunctionComponent<WorkHistoryItem> = (props: Props) => {
             <div className='workhistory-company'>
                 {props.company}
             </div>
-            {generateWorkOverview()}
+                {generateWorkOverview()}
             <div className='workhistory-location'>
                 {props.location}
             </div>
@@ -67,6 +67,30 @@ const WorkHistoryInfo: FunctionComponent<WorkHistoryItem> = (props: Props) => {
 }
 
 const workHistoryInfoList: WorkHistoryItem[] = [
+    {
+        title: 'FULL STACK DEVELOPER',
+        company: 'Costco',
+        location: 'Issaquah, WA',
+        date: 'October 2021 - Present',
+        overview: 'Costco is a titan in the both the . ' +
+            'In the Digital Transformation Environment Team, we focused on changing the ' +
+            'software development culture within Boeing.',
+        description: [
+            <>
+                <ul className='devii'>
+                    <li>
+                        <>Transformed software development teams within Boeing through mentoring and
+                        leadership while driving development with agile methodologies and eXtreme programming techniques
+                    (   i.e. <em>test-driven development</em>, <em>pair programming</em> and <em>continuous integration</em>).</>
+                    </li>
+                    <li>
+                        <>Modernized legacy applications with modern web frameworks and services including,
+                        <em> Java</em> with Spring Boot, <em>React.js</em> and <em>Pivotal Cloud Foundry</em>.</>
+                    </li>
+                </ul>
+            </>
+        ],
+    },
     {
         title: 'SOFTWARE ENGINEER II',
         company: 'The Boeing Company',
